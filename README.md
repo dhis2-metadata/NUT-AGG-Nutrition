@@ -1,2 +1,2 @@
-# NUT-AGG-Nutrition_Aggregate
+# NUT-AGG-Nutrition
 Nutrition - Aggregate metadata package
