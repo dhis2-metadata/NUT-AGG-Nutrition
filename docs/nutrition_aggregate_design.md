@@ -2,7 +2,7 @@
 
 ## 1.Background and Purpose
 
-The **Nutrition (NUT)** digital data package was developed in collaboration with UNICEF as a response to an expressed need from countries to rapidly adapt a solution for managing the data originating from the planned/undertaken nutrition activities.The NUT aggregate metadata package has therefore been designed as an installable solution for countries to update their DHIS2-based HMIS according to the updated version of the UNICEF guidelines .
+The **Nutrition (NUT)** digital data package was developed in collaboration with UNICEF as a response to an expressed need from countries to rapidly adapt a solution for managing the data originating from the planned/undertaken nutrition activities.The NUT aggregate metadata package has therefore been designed as an installable solution for countries to update their DHIS2-based HMIS according to the updated version of the [UNICEF guidelines](https://data.unicef.org/resources/strengthening-nutrition-information-systems/).
 
 This NUT Aggregate System Design document provides an overview of the design principles and global technical guidance used to develop a standard metadata package for monitoring the NUT activities at facility and community levels. The NUT metadata package can be adapted to local needs and national guidelines.
 
@@ -615,3 +615,5 @@ The table below provides the CHIS indicators, if present, that can be used to re
 Digital data packages are optimized for Android data collection with the [**DHIS2 Capture App**](https://play.google.com/store/apps/details?id=com.dhis2&hl=en), free to download on the GooglePlay store.  Key considerations in design was to ensure that all forms are configured with sections that structure form layout for better display on the android devices.  Also, with the requirement of minimal data disaggregation in this package, all the dataSet layout should provide a concise view for Android display.
 
 ## 11. References
+
+UNICEF (November 2021). Strengthening Nutrition Information Systems URL: https://data.unicef.org/resources/strengthening-nutrition-information-systems/ Guidelines and links will be available soon.
