@@ -567,7 +567,7 @@ Among the range of health areas covered in the modules of the CHIS package, **Nu
 
 Should users have **both the NUT and the CHIS packages** in the same instance, they can use the table to compare the two packages and observe the parallelisms and the differences in order to select the dataset that better mirrors the local activities.
 
-The [NUT/CHIS summary table](resources/nut-chis-mapping-en.xlsx)  provides an overview of the alignment of the DEs present in the NUT - Community and in the CHIS - Nutrition datasets.
+The [NUT/CHIS summary table](resources/nut-chis-mapping.xlsx)  provides an overview of the alignment of the DEs present in the NUT - Community and in the CHIS - Nutrition datasets.
 
 The following sections and DEs **in the NUT package have no direct overlap with the CHIS - Nutrition** dataset:
 
