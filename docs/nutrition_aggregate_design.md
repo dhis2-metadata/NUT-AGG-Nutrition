@@ -1,6 +1,6 @@
 # Nutrition - System Design Document { #nutrition-aggregate-design}
 
-## 1.Background and Purpose
+## Background and Purpose
 
 The **Nutrition (NUT)** digital data package was developed in collaboration with UNICEF as a response to an expressed need from countries to rapidly adapt a solution for managing the data originating from the planned/undertaken nutrition activities.The NUT aggregate metadata package has therefore been designed as an installable solution for countries to update their DHIS2-based HMIS according to the updated version of the [UNICEF guidelines](https://data.unicef.org/resources/strengthening-nutrition-information-systems/).
 
@@ -8,9 +8,9 @@ This NUT Aggregate System Design document provides an overview of the design pri
 
 This document is intended for use by DHIS2 implementers at country and regional level to be able to support implementation and localization of the configuration package while adhering to the design principles set forth.
 
-## 2.System Design Overview
+## System Design Overview
 
-### 2.1.Package Structure
+### Package Structure
 
 The NUT aggregate package is structured as follows:
 
@@ -21,7 +21,7 @@ The NUT aggregate package is structured as follows:
 | **Nutrition Facility**   | Monthly     | Reports the NUT activities  (Vit A/IFA supplementation / Infant and Young Child Feeding / Maternal counselling / Growth Monitoring & Promotion and Wasting) occurring at health facility level.  |
 | **Nutrition Population** | Yearly      | Brief collection of basic demographic data points.                                                                                                                                         |
 
-### 2.2.Use Case
+### Use Case
 
 The NUT package has been designed for the data collection and analysis of routine nutrition activities carried out in the facilities as much as in the community.
 
@@ -31,13 +31,13 @@ The population dataset should instead be assigned according to the local level o
 
 How and where to obtain the denominator related to the estimated population of children with moderate and severe wasting, as much as at what level the denominator is actioned, is very much dependent on the local context. Countries should therefore assign the dataset to the appropriate administrative level in the system's hierarchy in order to best mirror the local flow of information.
 
-### 2.3.Intended Users
+### Intended Users
 
 - **Health facility users** and **community health workers**: capture and report key data on NUT activities presenting at the health facility
 - **Program managers**: managers at national and sub-national level may be responsible for supporting data entry and analysis.
 - **National and local health authorities**: to monitor and analyse the surveillance of data through dashboards and analytics tools, to conduct risk assessments and plan response measures; to generate reports for regional and global reporting
 
-## 3.Data Sets
+## Data Sets
 
 The table below provides an overview of the DEs present in the NUT package, their descriptions, their disaggregations, and the Data Element Groups (DEG).
 
@@ -161,9 +161,9 @@ The table below provides an overview of the DEs present in the NUT package, thei
 >
 >Assisted birth: Standard terminology used in DHIS2 naming uses the term ‘*Assisted delivery in facility*’, this is when a delivery >is done using a vacuum or a forceps. The term ‘*assisted birth*’ used here is *NOT* related to a delivery with vacuum or forceps, >rather that the woman who delivered was supported by a skilled birth attendant.
 
-## 4.Dataset Details
+## Dataset Details
 
-### 4.1.Nutrition VAS Event Dataset Details
+### Nutrition VAS Event Dataset Details
 
 This dataset collects data on Vitamin A supplementation activities in both facility and community. Vitamin A supplementation is measured over a half year period, either via routine or campaigns (known as Events) or a mixture of both. This is defined as a semester. In analysis, specifically for indicator calculations, data must only be read as either a 6 month semester or a monthly value. Do not try to use the semester coverage to estimate a yearly coverage, the denominator is not the same as for a semester. GAVA (Global Alliance for Vitamin A supplementation) demands that the 2 values for each half year period are noted and the LOWER of the two values is used to reflect the coverage for the year. It is not possible to automatically calculate this in DHIS2 at present.
 
@@ -171,7 +171,7 @@ This dataset collects data on Vitamin A supplementation activities in both facil
 
 The section, and dataset, collects the information relative to the one-shot (event) distribution activities of Vitamin A and the supplements distributed to children and those distributed by CHWs. As Vitamin A is often distributed at health facilities during campaigns, the two data elements have been specifically designed to separate WHO distributed the supplements: nurses/doctors/pharmacists vs community health workers.
 
-### 4.2.Nutrition Community Dataset
+### Nutrition Community Dataset
 
 ![Vit A distribution in the community](resources/images/nut_comm_001-en.png)
 
@@ -196,7 +196,7 @@ The section groups the routine screening performed on children during nutrition-
 
 The second part of the section summarizes the births occurring in the community and the weights of the newborns.
 
-### 4.3.Nutrition Facility Dataset
+### Nutrition Facility Dataset
 
 ![Vit A supplement distribution in the facilities](resources/images/nut_facility_001-en.png)
 
@@ -206,7 +206,7 @@ The section collects the information on routine administration of Vit A suppleme
 
 The section collects the data on Hb screenings and anaemia among ANC women, and IFA supplementation during ANC and PNC visits at facility level.
 
-### 4.3.3.Infant and Young Child Feeding (IYCF)
+### Infant and Young Child Feeding (IYCF)
 
 ![Infant and Young Child Feeding in the facilities](resources/images/nut_facility_003-en.png)
 
@@ -239,14 +239,14 @@ This section reports on referral of children with severe wasting that are referr
 
 ![Referral of wasted children in the facilities](resources/images/nut_facility_008-en.png)
 
-### 4.4.Nutrition Population Dataset
+### Nutrition Population Dataset
 
 ![Population estimates](resources/images/nut_pop_001-en.png)
 
 The dataset collects very basic demographic data for the calculation of population-based rates within the NUT activities.
 As aforementioned, the source of the denominators and assignation of the dataset to the admin level is very much dependent on the local context and should therefore be kept into consideration during the implementation of the package.
 
-## 5. Validation Rules
+## Validation Rules
 
 Validation rules have also been grouped by activity rather than datasets. All rules have been set with a monthly periodicity. The VR group is called NUT - Nutrition.
 
@@ -322,7 +322,7 @@ Validation rules have also been grouped by activity rather than datasets. All ru
 | NUT - ANC contacts during which pregnant women received counselling on physical activity Vs Community ANC contacts                                                                                                          | ANC contacts during which pregnant women received counselling on physical activity                                                                          | less_than_or_equal_to | Community ANC contacts                                                                                                  |
 | NUT - ANC contact during which pregnant women received any breastfeeding counselling Vs ANC contacts                                                                                                                        | ANC contact during which pregnant women received any breastfeeding counselling                                                                              | less_than_or_equal_to | ANC contacts                                                                                                            |
 
-## 6. User Groups
+## User Groups
 
 As part of the package configuration, user groups have been created to be used to manage sharing settings in the metadata for all the modules. Core metadata that use these sharing settings include mainly the dataSets, dashboard, indicators and data Elements. The 3 user groups created include:
 
@@ -332,7 +332,7 @@ As part of the package configuration, user groups have been created to be used t
 
 Whereas it is important to maintain these userGroups while installing this package, feel free to review them inline with any existing userGroups setup or policy in the host instance.
 
-## 7. Analytics and Indicators
+## Analytics and Indicators
 
 Just like the data element groups, the indicators groups are divided by activities rather than by datasets. Moreover, the indicator groups are further divided by **“core”** and **“additional”** to indicate whether the indicators are part of the compulsory set of indicators, or whether the indicators are optional:
 
@@ -456,7 +456,7 @@ Just like the data element groups, the indicators groups are divided by activiti
 | `zTO5aniDoIo` | NUT - Percentage of assisted births with a birthweight of <2500g in facility                                      | Number of births assisted by a skilled attendant for which weight was taken and recorded within 1 hour after birth with value <2500g                                       | Number of births assisted by a skilled attendant for which weight was taken and recorded within 1 hour after birth                          | NUT - Birthweight                                                                   |
 | `zwtrn1yDlAa` | NUT - Wasting moderate mortality (%)                                                                              | Child with moderate wasting discharged died                                                                                                                                | Moderate wasting treatment outcome (recovered/died/non responsive/defaulted)                                                                | NUT - Wasting - Severe/Moderate                                                     |
 
-## 8. Dashboards
+## Dashboards
 
 The NUT package includes three predefined dashboard:
 
@@ -470,9 +470,9 @@ The NUT package includes three predefined dashboard:
 >
 > Please note that the dashboards are preconfigured to provide the users a baseline onto which to build the local dashboards. Users >can edit (remove and add) items and their configuration - change the visualization depending on the disaggregations used, change the >time of analysis depending on the chosen periodicity of the datasets, or change the types of graphs just to name a few examples.
 
-### 8.1.Community Dashboard
+### Community Dashboard
 
-This dashboard provides an example of a monitoring dashboard for facility-based nutritional activities. Countries should adapt and expand it according to the local changes to the dataset.
+This dashboard provides an example of a monitoring dashboard for community-based nutritional activities. Countries should adapt and expand it according to the local changes to the dataset.
 
 ![Community dashboard](resources/images/nut_comm_db_001-en.png)
 
@@ -491,7 +491,7 @@ The following table summarizes the items proposed in the dashboard:
 | NUT_COMM_009 | NUT - ANC breastfeeding counselling in community (%), last 6 months                                           | chart    |
 | NUT_COMM_010 | NUT - Child consultation with counselling on appropriate complementary child feeding 6-23m (%), last 6 months | chart    |
 
-### 8.2.Facility Dashboard
+### Facility Dashboard
 
 This dashboard provides an example of a monitoring dashboard for facility-based nutritional activities. Countries should adapt and expand it according to the local changes to the dataset.
 
@@ -532,7 +532,7 @@ The following table summarizes the items proposed in the dashboard:
 | NUT_FACILITY_029 | NUT - First ANC contact - HB/Anaemia/iron supplement, last 6 months                        | chart    |
 | NUT_FACILITY_030 | NUT - Wasting severe treatment coverage (%), this year                                    | maps     |
 
-### 8.3. Facility and Community Dashboard
+### Facility and Community Dashboard
 
 This dashboard is a combination of data coming from facility-based activities and activities carried out in the community. Numbers need of course to be interpreted as totals for the specific activities (contacts) and not by person/client in order not to double count and skew the outcomes of the nutritional activities.
 
@@ -559,7 +559,7 @@ The following table summarizes the items proposed in the dashboard:
 | NUT_FAC_COMM_015 | NUT - ANC  breastfeeding counselling community and facility (%), last 6 months                      | chart    |
 | NUT_FAC_COMM_016 | NUT - ANC maternal nutrition counselling in facility and community, last quarter                    | chart    |
 
-## 9.Special Considerations: Nutrition and Community
+## Special Considerations: Nutrition and Community
 
 The need to align the efforts to enhance community programmes and their data is one of the paramount priorities for the effective analysis of community needs and activities.
 While the Community dataset of the NUT package supports the collection of nutrition-related data at community level, the DHIS2 **Community Health Information Systems (CHIS)** { #chis-system-design } metadata package is also designed to facilitate the capture and analysis of a core set of indicators for community-based health services. The CHIS metadata package developed in collaboration with UNICEF accompanies the  WHO Analysis and Use of Community Data: Guidance for community health service monitoring.
@@ -592,7 +592,7 @@ Some of the CHIS sections and DEs also do not directly overlap with any of the D
 | Yearly  | Obesity (5-19 y)                       | Children (5-19 y) overweight and obese                                                                                                                                                                                    |
 | Yearly  | Underweight women and adolescent girls | Consultations non-pregnant women and adolescent girls Underweight women                                                                                                                                                   |
 
-### 9.1.Data Triangulation Facility and Community
+### Data Triangulation Facility and Community
 
 Should the users decide to collect the community data on nutrition with the CHIS - Nutrition dataset while using the NUT - Facility dataset for the health facility data, they will have to adapt the dashboard triangulating the community and the health facility nutrition data (NUT - Nutrition facility and community)
 The table below provides the CHIS indicators, if present, that can be used to replace the NUT indicators referring to community activities.
@@ -610,10 +610,10 @@ The table below provides the CHIS indicators, if present, that can be used to re
 | NUT - Weight measurement in facility and community, last 6 months                                  | NUT - Child weighed measurement in community(%)                                                           | CH064 - Children (6-59 m) weighed  There is no proportion preconfigured in the CHIS-Nutrition dataset but can be configured by cloning indicator CH064 and setting DE CH067b as denominator.                                                        |
 | NUT - MUAC measurement in facility and community, last quarter                                     | NUT - Child MUAC measurement in community (%)                                                             | There is no direct correspondence to CHIS indicators for MUAC-only indicators - more info in the tables in section 9.                                                                                                                               |
 
-## 10. Android Compatibility
+## Android Compatibility
 
-Digital data packages are optimized for Android data collection with the [**DHIS2 Capture App**](https://play.google.com/store/apps/details?id=com.dhis2&hl=en), free to download on the GooglePlay store.  Key considerations in design was to ensure that all forms are configured with sections that structure form layout for better display on the android devices.  Also, with the requirement of minimal data disaggregation in this package, all the dataSet layout should provide a concise view for Android display.
+Digital data packages are optimized for Android data collection with the [**DHIS2 Capture App**](https://play.google.com/store/apps/details?id=com.dhis2&hl=en), free to download on the GooglePlay store.  Key considerations in design was to ensure that all forms are configured with sections that structure form layout for better display on the Android devices.  Also, with the requirement of minimal data disaggregation in this package, all the dataSet layout should provide a concise view for Android display.
 
-## 11. References
+## References
 
 UNICEF (November 2021). Strengthening Nutrition Information Systems URL: https://data.unicef.org/resources/strengthening-nutrition-information-systems/ Guidelines and links will be available soon.
