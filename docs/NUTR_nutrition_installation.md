@@ -80,7 +80,9 @@ Great care should be taken to ensure that the server itself and the DHIS2 applic
 
 While not always necessary, it can often be advantageous to make certain modifications to the metadata file before importing it into DHIS2.
 
-## Preparing the Metadata File
+## Preparing the metadata file
+
+It is required to apply some changes to the metadata file before it can be imported. The scope of work may vary from package to package.
 
 ### Default data dimension
 
