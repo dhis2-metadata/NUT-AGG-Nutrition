@@ -6,6 +6,8 @@ System default language: English
 
 ## Overview
 
+The package metadata json files contain a "package" component that provides technical details on package version and content. The files available in the current version of the package are listed below.
+
 === "DHIS2.35"
 
     ```json
