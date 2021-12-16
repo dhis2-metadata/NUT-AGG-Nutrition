@@ -8,7 +8,11 @@ System default language: English
 
 The package metadata json files contain a "package" component that provides technical details on package version and content. The files available in the current version of the package are listed below.
 
-=== "DHIS2.35"
+### DHIS2.35
+
+Package overview for DHIS2.35
+
+=== "Complete package"
 
     ```json
     "package": {
@@ -23,8 +27,27 @@ The package metadata json files contain a "package" component that provides tech
         "version": "1.0.0"
     }
     ```
+=== "Dashboard"
 
-=== "DHIS2.36"
+    ```json
+    "package": {
+        "DHIS2Build": "834b25f",
+        "DHIS2Version": "2.35.8",
+        "code": "NUTRDB",
+        "description": "",
+        "lastUpdated": "20211202T134259",
+        "locale": "en",
+        "name": "NUTRDB_1.0.0_DHIS2.35",
+        "type": "DSH",
+        "version": "1.0.0"
+    }
+    ```
+
+### DHIS2.36
+
+Package overview for DHIS2.36
+
+=== "Complete package"
 
     ```json
     "package": {
@@ -40,7 +63,27 @@ The package metadata json files contain a "package" component that provides tech
     }
     ```
 
-=== "DHIS2.37"
+=== "Dashboard"
+
+    ```json
+    "package": {
+        "DHIS2Build": "2adf10b",
+        "DHIS2Version": "2.36.4",
+        "code": "NUTRDB",
+        "description": "",
+        "lastUpdated": "20211202T134259",
+        "locale": "en",
+        "name": "NUTRDB_1.0.0_DHIS2.36",
+        "type": "DSH",
+        "version": "1.0.0"
+    }
+    ```
+
+### DHIS2.37
+
+Package overview for DHIS2.37
+
+=== "Complete package"
 
     ```json
     "package": {
@@ -52,6 +95,22 @@ The package metadata json files contain a "package" component that provides tech
         "locale": "en",
         "name": "NUTR00_1.0.0_DHIS2.37",
         "type": "AGG",
+        "version": "1.0.0"
+    }
+    ```
+
+=== "Dashboard"
+
+    ```json
+    "package": {
+        "DHIS2Build": "b8d4ef3",
+        "DHIS2Version": "2.37.0",
+        "code": "NUTRDB",
+        "description": "",
+        "lastUpdated": "20211202T134259",
+        "locale": "en",
+        "name": "NUTRDB_1.0.0_DHIS2.37",
+        "type": "DSH",
         "version": "1.0.0"
     }
     ```
