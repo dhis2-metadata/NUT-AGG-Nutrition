@@ -1,6 +1,6 @@
 # Nutrition Aggregate Installation Guide { #nutrition-installation }
 
-This document includes an installation guide for the Rehabilitation aggregate package.
+This document includes an installation guide for the Nutrition aggregate package.
 
 System default language: English
 
