@@ -1,4 +1,4 @@
-# Nutrition - System Design Document { #nutrition-aggregate-design}
+# Nutrition - System Design Document { #nutrition-aggregate-design }
 
 ## Background and Purpose
 
@@ -562,8 +562,8 @@ The following table summarizes the items proposed in the dashboard:
 ## Special Considerations: Nutrition and Community
 
 The need to align the efforts to enhance community programmes and their data is one of the paramount priorities for the effective analysis of community needs and activities.
-While the Community dataset of the NUT package supports the collection of nutrition-related data at community level, the DHIS2 **Community Health Information Systems (CHIS)** { #chis-system-design } metadata package is also designed to facilitate the capture and analysis of a core set of indicators for community-based health services. The CHIS metadata package developed in collaboration with UNICEF accompanies the  WHO Analysis and Use of Community Data: Guidance for community health service monitoring.
-Among the range of health areas covered in the modules of the CHIS package, **Nutrition information** { #ch-nut-aggregate-design } can be collected at monthly and yearly intervals.
+While the Community dataset of the NUT package supports the collection of nutrition-related data at community level, the DHIS2 [**Community Health Information Systems (CHIS)**](#chis-system-design) metadata package is also designed to facilitate the capture and analysis of a core set of indicators for community-based health services. The CHIS metadata package developed in collaboration with UNICEF accompanies the  WHO Analysis and Use of Community Data: Guidance for community health service monitoring.
+Among the range of health areas covered in the modules of the CHIS package, [**Nutrition information**](#ch-nut-aggregate-design) can be collected at monthly and yearly intervals.
 
 Should users have **both the NUT and the CHIS packages** in the same instance, they can use the table to compare the two packages and observe the parallelisms and the differences in order to select the dataset that better mirrors the local activities.
 
