@@ -38,7 +38,7 @@ The NUT aggregate package is structured as follows:
 | **Nutrition Population** | Yearly      | Brief collection of basic demographic data points.                                                                                                                                         |
 ### Data Elements
 
-The full list of data elements is available in the [Metadata Reference File](resources/NUTR00_1.0.0_DHIS2.37)
+The full list of data elements is available in the [Metadata Reference File](resources/NUTR00_1.0.0_DHIS2.37.xlsx)
 
 >**NOTE:**
 >
@@ -132,7 +132,7 @@ As aforementioned, the source of the denominators and assignation of the dataset
 ## Validation Rules
 
 Validation rules have also been grouped by activity rather than datasets. All rules have been set with a monthly periodicity. The VR group is called NUT - Nutrition.
-The full list of validation rules is available in the [Metadata Reference File](resources/NUTR00_1.0.0_DHIS2.37).
+The full list of validation rules is available in the [Metadata Reference File](resources/NUTR00_1.0.0_DHIS2.37.xlsx).
 
 ## User Groups
 
@@ -155,7 +155,7 @@ Just like the data element groups, the indicators groups are divided by activiti
 - Infant and Young Child Feeding *(Core)*/Infant and Young Child Feeding *(Additional)*
 - Growth monitoring and promotion *(Core)*/Growth monitoring and promotion *(Additional)*
 
-The full list of indicators is available in the [Metadata Reference File](resources/NUTR00_1.0.0_DHIS2.37).
+The full list of indicators is available in the [Metadata Reference File](resources/NUTR00_1.0.0_DHIS2.37.xlsx).
 
 ## Dashboards
 
