@@ -1,2 +1,1 @@
-# NUTR-Nutrition
-Nutrition - Aggregate metadata package
+# Nutrition - Aggregate metadata package
