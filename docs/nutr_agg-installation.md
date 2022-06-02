@@ -1,4 +1,4 @@
-# Nutrition Aggregate Installation Guide { #nutrition-installation }
+# Nutrition Aggregate Installation Guide { #nutr_agg-installation }
 
 This document includes an installation guide for the Nutrition aggregate package.
 
