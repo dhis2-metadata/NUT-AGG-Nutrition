@@ -1,4 +1,4 @@
-# Nutrition - System Design Document { #nutrition-aggregate-design}
+# Nutrition - System Design Document { #nutr-agg-design }
 
 ## Background and Purpose
 
