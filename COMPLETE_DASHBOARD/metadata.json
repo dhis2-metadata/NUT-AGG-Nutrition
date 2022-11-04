@@ -10760,7 +10760,7 @@
         "DHIS2Build": "b6d3754",
         "DHIS2Version": "2.36.12",
         "code": "NUTR_AGG",
-        "description": "Nutrition",
+        "description": "Nutrition (dashboard)",
         "lastUpdated": "20221028T141622",
         "locale": "en",
         "name": "NUTR_AGG_DSH_DHIS2.36.12-en",
