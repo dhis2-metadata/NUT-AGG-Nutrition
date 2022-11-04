@@ -1,4 +1,4 @@
-# Release Note
+# Release Note { #nutr-agg-release-note }
 
 ## 1.0.1
 
