@@ -46,6 +46,8 @@ The full list of data elements is available in the [Metadata Reference File](res
 
 ## Dataset Details
 
+As the datasets are organized by activities rather than as a full program, some DEs might appear as repeated in different sections within the same datasets. Implementers should keep in mind that these should be adapted according to the local organization of the nutrition program - are CHWs / HWs managing all the activities transversally (i.e. the same worker takes care of counselling as much as ANC contacts and supplements)? Are the activities distributed among different workers (i.e. some workers only do counselling while others take care solely of ANC/PNC or of the nutritional screening of the children)? Depending on the distribution of the tasks, the variables should be arranged accordingly to prevent double data entry for the same information.
+
 ### Nutrition VAS Event Dataset Details
 
 This dataset collects data on Vitamin A supplementation activities in both facility and community. Vitamin A supplementation is measured over a half year period, either via routine or campaigns (known as Events) or a mixture of both. This is defined as a semester. In analysis, specifically for indicator calculations, data must only be read as either a 6 month semester or a monthly value. Do not try to use the semester coverage to estimate a yearly coverage, the denominator is not the same as for a semester. GAVA (Global Alliance for Vitamin A supplementation) demands that the 2 values for each half year period are noted and the LOWER of the two values is used to reflect the coverage for the year. It is not possible to automatically calculate this in DHIS2 at present.
@@ -60,7 +62,7 @@ The section, and dataset, collects the information relative to the one-shot (eve
 
 ![Iron-containing supplements distribution in the community](resources/images/nut_comm_002-en.png)
 
-The section focuses on antenatal contacts and new mothers receiving iron-containing supplements at community level.
+The section focuses on antenatal contacts and new mothers receiving iron-containing supplements at community level. The VAS distribution in this dataset accounts for the routine events happening regularly at community level.
 
 ![Infant and Young Child Feeding in the community](resources/images/nut_comm_003-en.png)
 
@@ -73,11 +75,11 @@ The section focuses on counseling sessions given to mothers on uniquely the heal
 
 ![Growth Monitoring and Promotion in the community](resources/images/nut_comm_005-en.png)
 
-The section groups the routine screening performed on children during nutrition-related consultations (MUAC measurements, height/length and weight measurements) by age groups and sex. It also provides an aggregate overview of children who have lost or gained weight, or whose weight remained unchanged since the last contact. Finally, the section also reports the children with moderate and severe wasting referred for further evaluation and care.
+The section groups the routine screening performed on children during nutrition-related consultations (MUAC measurements, height/length and weight measurements) by age groups and sex. It also provides an aggregate overview of children who have lost or gained weight, or whose weight remained unchanged **since the last contact**. Finally, the section also reports the children with moderate and severe wasting referred for further evaluation and care.
 
 ![Births and birth weights in the community](resources/images/nut_comm_006-en.png)
 
-The second part of the section summarizes the births occurring in the community and the weights of the newborns.
+The second part of the section summarizes the births occurring in the community and the weights of the newborns. Please note that the original purpose of the weight thresholds present in the data elements (1500 g and 2500 g) was to be mutually exclusive - i.e. "Assisted home births with birthweight <1500g" should report for all the newborns with a weight below 1500 g, while "Assisted home births with birthweight <2500g" should report for all the newborns with a weight between 1501g and 2500g. Depending on the feasibility of the activity in the community, the reporting should at least try to include the newborns with a weight below 2500 g excluding the 1500g threshold.
 
 ### Nutrition Facility Dataset
 
@@ -102,11 +104,11 @@ The section focuses on counseling sessions given to mothers on uniquely the heal
 
 ![Growth Monitoring and Promotion in the facilities](resources/images/nut_facility_005-en.png)
 
-The section gathers all the DEs related to the nutritional screenings (weight fluctuations, MUAC measurements, referrals for moderate and severe wasting, etc) of the children presenting at facility level.
+The section gathers all the DEs related to the nutritional screenings (weight fluctuations, MUAC measurements, referrals for moderate and severe wasting, etc) of the children presenting at facility level. THe weight change should be interpreted with **refefrence to the previous visit**.
 
 ![Births and birth weights in the facility](resources/images/nut_facility_009-en.png)
 
-The second part of the section summarizes the births occurring in the facility and the key information on birth weights of the newborns.
+The second part of the section summarizes the births occurring in the facility and the key information on birth weights of the newborns. Please note that the original purpose of the weight thresholds present in the data elements (1500 g and 2500 g) was to be mutually exclusive - i.e. "Assisted births with birthweight <1500g" should report for all the newborns with a weight below 1500 g, while "Assisted births with birthweight <2500g" should report for all the newborns with a weight between 1501g and 2500g. Depending on the feasibility of the activity in the community, the reporting should at least try to include the newborns with a weight below 2500 g excluding the 1500g threshold.
 
 ![Children with wasting in the facilities](resources/images/nut_facility_006-en.png)
 
@@ -127,7 +129,9 @@ This section reports on referral of children with severe wasting that are referr
 ![Population estimates](resources/images/nut_pop_001-en.png)
 
 The dataset collects very basic demographic data for the calculation of population-based prevalence within the NUT activities.
-As aforementioned, the source of the denominators and assignation of the dataset to the admin level is very much dependent on the local context and should therefore be kept into consideration during the implementation of the package.
+As aforementioned, the source of the denominators and assignation of the dataset to the admin level is very much dependent on the local context and should therefore be kept into consideration during the implementation of the package. The "Population < 1 year" and "Population < 5 years" should be adapted to the local availability of population data - if available, the DEs should be treated as mutually exclusive reporting respectively the children between 0 and 11 months, and the children between 12 and 59 months. If unavailable, implementers should either rely on estimates or at least report the population under 5 years of age.
+Again, depending on the availability of population data, the first two DEs in the table could be representative of just facility-based data or come from facility estimates, while the "Population 0-59 months in community" could be used for the community population in the catchment area.
+Overall, given the difficulty to handle population data, implementers should at least have one estimate of children 0-59 months that could work for the facility and the community served by that facility.
 
 ## Validation Rules
 
