@@ -1,6 +1,6 @@
 # Nutrition
 
-![Nutrition](resources/images/package-nutrition.png) {.center}
+![Nutrition](resources/images/package-nutrition.png) { .center }
 
 [Release note](#nutr-agg-release-note)
 
