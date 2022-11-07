@@ -38,7 +38,7 @@ The NUT aggregate package is structured as follows:
 | **Nutrition Population** | Yearly      | Brief collection of basic demographic data points.                                                                                                                                         |
 ### Data Elements
 
-The full list of data elements is available in the [Metadata Reference File](resources/NUTR00_1.0.0_DHIS2.37.xlsx)
+The full list of data elements is available in the Metadata Reference File.
 
 >**NOTE:**
 >
@@ -136,7 +136,7 @@ Overall, given the difficulty to handle population data, implementers should at 
 ## Validation Rules
 
 Validation rules have also been grouped by activity rather than datasets. All rules have been set with a monthly periodicity. The VR group is called NUT - Nutrition.
-The full list of validation rules is available in the [Metadata Reference File](resources/NUTR00_1.0.0_DHIS2.37.xlsx).
+The full list of validation rules is available in the metadata reference file.
 
 ## User Groups
 
@@ -159,7 +159,7 @@ Just like the data element groups, the indicators groups are divided by activiti
 - Infant and Young Child Feeding *(Core)*/Infant and Young Child Feeding *(Additional)*
 - Growth monitoring and promotion *(Core)*/Growth monitoring and promotion *(Additional)*
 
-The full list of indicators is available in the [Metadata Reference File](resources/NUTR00_1.0.0_DHIS2.37.xlsx).
+The full list of indicators is available in the metadata reference file.
 
 ## Dashboards
 
@@ -175,7 +175,7 @@ The NUT package includes three predefined dashboard:
 >
 > Please note that the dashboards are preconfigured to provide the users a baseline onto which to build the local dashboards. Users >can edit (remove and add) items and their configuration - change the visualization depending on the disaggregations used, change the >time of analysis depending on the chosen periodicity of the datasets, or change the types of graphs just to name a few examples.
 
-The items proposed in the preconfigured dashboards are available in the [Metadata Reference File](resources/NUTR00_1.0.0_DHIS2.37.xlsx).
+The items proposed in the preconfigured dashboards are available in the metadata reference file.
 
 ## Special Considerations: Nutrition and Community
 
