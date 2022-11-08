@@ -1,6 +1,6 @@
 # Nutrition
 
-![Nutrition](resources/images/package-nutrition.png){ .left width=30% }
+![Nutrition](resources/images/package-nutrition.png){ width=30% }
 
 ## Design
 
