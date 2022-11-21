@@ -4,16 +4,16 @@
 
 ## Design
 
-[Version 1.0.1](#nutr-agg-design)
+- [Version 1.0.1](#nutr-agg-design)
 
 ## Installation
 
-[Installation Guide](#nutr-agg-installation)
+- [Installation Guide](#nutr-agg-installation)
 
 ## Release Note
 
-[Release Note](#nutr-agg-release-note)
+- [Release Note](#nutr-agg-release-note)
 
 ## Metadata Reference
 
-[Version 1.0.1](https://packages.dhis2.org/en/NUTR_AGG/1.0.1/DHIS2.38/NUTR_AGG_COMPLETE_1.0.1_DHIS2.38.xlsx)
+- [Version 1.0.1](https://packages.dhis2.org/en/NUTR_AGG/1.0.1/DHIS2.38/NUTR_AGG_COMPLETE_1.0.1_DHIS2.38.xlsx)
