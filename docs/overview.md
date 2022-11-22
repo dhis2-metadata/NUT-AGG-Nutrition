@@ -2,6 +2,10 @@
 
 ![Nutrition](resources/images/package-nutrition.png){ width=30% }
 
+## Release Note
+
+- [Release Note](#nutr-agg-release-note)
+
 ## Design
 
 - [Version 1.0.1](#nutr-agg-design)
@@ -9,10 +13,6 @@
 ## Installation
 
 - [Installation Guide](#nutr-agg-installation)
-
-## Release Note
-
-- [Release Note](#nutr-agg-release-note)
 
 ## Metadata Reference
 
