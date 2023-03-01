@@ -1,5 +1,11 @@
 # Release Note { #nutr-agg-release-note }
 
+## 1.0.2
+
+The 1.0.2 version of the nutrition package is a minor update of the version 1.0.1 and includes:
+
+- Revised names of data elements and indicators
+
 ## 1.0.1
 
 The 1.0.1 version of the nutrition package is a minor update of the version 1.0.0 and includes:
